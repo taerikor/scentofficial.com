@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+  color: azure;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+
+.logo_main {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+.logo_sub {
+  color: orange;
+  font-size: 1rem;
+}
+.logo_container {
+  margin: 20px;
+  text-align: center;
+}
+.link_list {
+  float: right;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.link_list a {
+  font-size: 2rem;
+}
+.btn_container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn_container i {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  font-size: 40px;
+  color: #bfff00;
+  margin: 1rem;
+  cursor: pointer;
+}
