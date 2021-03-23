@@ -12,17 +12,19 @@
 </head>
 <body>
     <div style="position: fixed; z-index: -99; width: 100%; height: 100%; display: flex; justify-content: center;">
-    <iframe width="100%" height="100%" 
-    src="https://www.youtube.com/embed/IJilkMPqvs0?controls=0&autoplay=1&mute=1" 
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-    ></iframe>
+        <a href="https://www.youtube.com/watch?v=z3YWZbZ1UTg" target="_blank">
+    <video id='video_js' autoplay muted width="100%" height="100%" >
+            <source id='first_src' src="src/video/24k.mp4" type="video/mp4">
+            </video>
+        </a>
       </div>
     <div class="logo_container">
-        <h1 class="logo_main">SCENT</h1>
-        <span class="logo_sub">till you can smell the scent of our music</span>
+        <img class="logo_img" src='src/logo.PNG' />
     </div>
     <div class="link_list">
+        <a href="#" target="_blank">
+            <i class="fab fa-soundcloud"></i>
+        </a>
         <a href="https://www.instagram.com/naeeum_musicstudio/" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
@@ -31,11 +33,17 @@
         </a>
     </div>
     <div class="btn_container">
-        <i class="fas fa-circle"></i>
-        <i class="far fa-circle"></i>
-        <i class="far fa-circle"></i>
-        <i class="far fa-circle"></i>
-        <i class="far fa-circle"></i>
+        <!-- <i class="far fa-circle" id="first_btn"></i>
+        <i class="far fa-circle" id="second_btn"></i>
+        <i class="far fa-circle" id="third_btn"></i>
+        <i class="far fa-circle" id="fourth_btn"></i>
+        <i class="far fa-circle" id="fifth_btn"></i> -->
+        <!-- <button class="glow-on-hover">Button</button> -->
+        <form>
+            <span class="per_js">0%</span>
+            <input class="range" type="range" min="0" max="100" value="0" step="20"/>
+        </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
