@@ -2,9 +2,12 @@ const btnContainer = document.querySelector('.btn_container')
 const button = btnContainer.querySelectorAll('span')
 const source = document.getElementById('first_src')
 const video = document.getElementById('video_js')
-const musicBtn = document.querySelector('.modal_btn')
-const musicModal = document.querySelector('.modal')
-const musicCloseBtn = document.querySelector('.modal_close')
+const musicBtn = document.querySelector('.music_btn')
+const modal = document.querySelector('.modal')
+const modalCloseBtn = document.querySelector('.modal_close')
+const aboutBtn = document.querySelector('.about_btn')
+const aboutContent = document.querySelector('.about_content')
+const musicContent = document.querySelector('.music_content')
 
 button.forEach(item => item.addEventListener('click',(e) => {
     const buttonId = e.target.id
@@ -31,8 +34,18 @@ button.forEach(item => item.addEventListener('click',(e) => {
 }))
 
 musicBtn.addEventListener('click',() => {
-    musicModal.classList.remove('hidden')
+    modal.classList.remove('hidden')
+    musicContent.classList.remove('hidden')
+    aboutContent.classList.add('hidden')
+    
 })
-musicCloseBtn.addEventListener('click',() => {
-    musicModal.classList.add('hidden')
+modalCloseBtn.addEventListener('click',() => {
+    modal.classList.add('hidden')
+})
+aboutBtn.addEventListener('click', () => {
+    console.log('hello')
+    modal.classList.remove('hidden')
+    aboutContent.classList.remove('hidden')
+    musicContent.classList.add('hidden')
+
 })
