@@ -1,4 +1,4 @@
-# Gulp (Nomad Coder)
+# Gulp Boiler plate (Nomad Coder)
 
 to learn about these
 
@@ -9,5 +9,5 @@ to learn about these
 - Github Pages
 - Babel
 
-source: https://nomadcoders.co/gulp-for-beginners
+source: https://nomadcoders.co/gulp-for-beginners  
 lecturer: [Nicolás Serrano Arévalo](https://github.com/serranoarevalo)

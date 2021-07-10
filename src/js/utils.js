@@ -1,1 +1,4 @@
-export const user = 'taeri'
+import packageJson from '../../package.json'
+
+
+export const author = packageJson.author

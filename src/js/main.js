@@ -1,3 +1,3 @@
-import {user} from './utils'
+import {author} from './utils'
 
-console.log(`hello! ${user}`)
+const h1 = document.querySelector('h1').innerText = `Hello! ${author}`
