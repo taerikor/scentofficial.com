@@ -22,6 +22,7 @@
     "@babel/preset-env": "^7.14.7",
     "@babel/register": "^7.14.5",
     "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
     "gulp-pug": "^5.0.0",
     "gulp-webserver": "^0.9.1"
   },
