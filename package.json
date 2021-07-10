@@ -1,0 +1,19 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "learn gulp, scss, pug...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taerikor/gulp.git"
+  },
+  "author": "taerikor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taerikor/gulp/issues"
+  },
+  "homepage": "https://github.com/taerikor/gulp#readme"
+}
