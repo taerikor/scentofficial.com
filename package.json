@@ -1,10 +1,11 @@
 {
-  "name": "gulp",
+  "name": "gulp-tutorial",
   "version": "1.0.0",
   "description": "learn gulp, scss, pug...",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/taerikor/gulp/issues"
   },
-  "homepage": "https://github.com/taerikor/gulp#readme"
+  "homepage": "https://github.com/taerikor/gulp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "del": "^6.0.0"
+  }
 }
