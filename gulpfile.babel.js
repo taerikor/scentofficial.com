@@ -12,16 +12,16 @@ import ghPages from 'gulp-gh-pages'
 const sass = require('gulp-sass')(require('sass'));
 
 const routes = {
-    pug:{
+    pug: {
         watch: "src/**/*.pug",
         src: "src/*.pug",
         dest: "build"
     },
-    img:{
+    img: {
         src: "src/image/*",
         dest: "build/img"
     },
-    sass:{
+    sass: {
         watch: "src/scss/**/*.scss",
         src: "src/scss/style.scss",
         dest: "build/css"
@@ -49,9 +49,9 @@ const styles = () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(
             autoPreFixer({
-              browsers: ["last 2 versions"]
+                cascade: false
             })
-          )
+        )
         .pipe(csso())
         .pipe(gulp.dest(routes.sass.dest))
 }
@@ -60,7 +60,7 @@ const js = () => {
         .pipe(
             bro({
                 transform: [
-                    babelify.configure({ presets: ["@babel/preset-env"]}),
+                    babelify.configure({ presets: ["@babel/preset-env"] }),
                     ["uglifyify", { global: true }]
                 ]
             })
@@ -68,9 +68,9 @@ const js = () => {
         .pipe(gulp.dest(routes.js.dest))
 }
 
-const clean = () => del(["build",".publish"])
+const clean = () => del(["build", ".publish"])
 
-const webserver = () => gulp.src("build").pipe(ws({livereload: true, open: true}))
+const webserver = () => gulp.src("build").pipe(ws({ livereload: true, open: true }))
 
 const watch = () => {
     gulp.watch(routes.pug.watch, pug)
@@ -80,13 +80,13 @@ const watch = () => {
 
 const gh = () => gulp.src("build/**/*").pipe(ghPages());
 
-const prepare = gulp.series([clean,img])
+const prepare = gulp.series([clean, img])
 
-const assets = gulp.series([pug,styles,js])
+const assets = gulp.series([pug, styles, js])
 
 const live = gulp.parallel([webserver, watch])
 
 
-export const build = gulp.series([prepare,assets])
-export const dev = gulp.series([build,live])
-export const deploy = gulp.series([build,gh,clean])
+export const build = gulp.series([prepare, assets])
+export const dev = gulp.series([build, live])
+export const deploy = gulp.series([build, gh, clean])

@@ -1,7 +1,7 @@
 {
-  "name": "gulp-tutorial",
+  "name": "scent-promotion",
   "version": "1.0.0",
-  "description": "learn gulp, scss, pug...",
+  "description": "Scent",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
