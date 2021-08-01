@@ -11,12 +11,11 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
+  display: none;
 }
 
 .logo img {
-  height: 60px;
+  height: 45px;
 }
 
 .header_container {
@@ -30,6 +29,10 @@ body {
   text-decoration: none;
   color: white;
 }
+.header_container img {
+  height: 40px;
+}
+
 .ball {
   position: absolute;
   border-radius: 100%;
