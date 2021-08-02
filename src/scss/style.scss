@@ -7,6 +7,7 @@ body {
   background-color: black;
   background-image: url("../img/2.jpeg");
   background-position: center;
+  background-size: contain;
   height: 100vh;
 }
 
@@ -20,17 +21,26 @@ body {
 
 .header_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   height: 50px;
+  padding: 10px 30px;
 }
-.header_container a {
-  text-decoration: none;
+.header_container i {
   color: white;
+  cursor: pointer;
+  font-size: 25px;
 }
 .header_container img {
   height: 40px;
+}
+
+.container {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
 }
 
 .ball {
@@ -43,12 +53,11 @@ body {
   box-shadow: 0 0 10px 0 #d1ce21 inset, 0 0 20px 2px #d1ce21;
 }
 
-.container {
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  display: inline-block;
+.ball:hover,
+.ball:focus {
+  box-shadow: 0 0 10px 0 #d1ce21 inset, 0 0 20px 10px #d1ce21;
 }
+
 .name {
   height: 20px;
   width: 100px;
@@ -63,11 +72,12 @@ body {
   position: absolute;
 }
 
-.hidden {
-  display: none;
+.slider {
+  background-color: white;
+  height: 50%;
+  width: 100%;
 }
 
-.ball:hover,
-.ball:focus {
-  box-shadow: 0 0 10px 0 #d1ce21 inset, 0 0 20px 10px #d1ce21;
+.hidden {
+  display: none;
 }
