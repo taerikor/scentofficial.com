@@ -1,3 +1,5 @@
+import { slider } from './slider';
+
 const colors = ["#d1ce21"];
 const link = [
 "/1",
@@ -74,3 +76,5 @@ balls.forEach((el, i, ra) => {
         el.childNodes[0].classList.add("hidden")
     })
 });
+
+slider();

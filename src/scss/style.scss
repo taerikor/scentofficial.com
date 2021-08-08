@@ -9,6 +9,7 @@ body {
   background-position: center;
   background-size: contain;
   height: 100vh;
+  z-index: 1;
 }
 
 .logo {
@@ -37,10 +38,11 @@ body {
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 2em;
   height: 2em;
   display: inline-block;
+  z-index: 2;
 }
 
 .ball {
@@ -73,9 +75,11 @@ body {
 }
 
 .slider {
+  position: absolute;
   background-color: white;
   height: 50%;
   width: 100%;
+  z-index: 3;
 }
 
 .hidden {
