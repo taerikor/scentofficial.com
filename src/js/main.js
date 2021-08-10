@@ -1,12 +1,13 @@
 import { slider } from './slider';
+import { about } from './about';
 
 const colors = ["#d1ce21"];
 const link = [
-"/1",
-"/2",
-"/3",
-"/4",
-"/5"
+"https://youtu.be/SRn9vmSJg6c",
+"https://youtu.be/VdCiydX5aOg",
+"https://youtu.be/iBWt59CKoB4",
+"https://youtu.be/okW4CsUaPK8",
+"https://youtu.be/t5RGd9AEY2U"
 ]
 const text = [
     "ONCE YOU ARE GIVEN CAN NOTHING BE CHANGED",
@@ -31,6 +32,7 @@ for (let i = 0; i < numBalls; i++) {
     ball.classList.add("ball");
     name.innerText = text[i]
     ball.href = link[i]
+    ball.target = "_blank"
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
     container.style.left = `${Math.floor(Math.random() * 100)}vw`;
     container.style.top = `${Math.floor(Math.random() * 100)}vh`;
@@ -78,3 +80,4 @@ balls.forEach((el, i, ra) => {
 });
 
 slider();
+about();
