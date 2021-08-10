@@ -17,8 +17,12 @@ const routes = {
         src: "src/*.pug",
         dest: "build"
     },
+    video:{
+        src: "src/assets/*.mp4",
+        dest: "build/video"
+    },
     img: {
-        src: "src/img/*",
+        src: "src/assets/img/*",
         dest: "build/img"
     },
     sass: {
@@ -44,6 +48,12 @@ const img = () => {
         .pipe(image())
         .pipe(gulp.dest(routes.img.dest))
 }
+
+const video = () => {
+    return gulp.src(routes.video.src)
+        .pipe(gulp.dest(routes.video.dest))
+}
+
 const styles = () => {
     return gulp.src(routes.sass.src)
         .pipe(sass().on('error', sass.logError))
@@ -80,7 +90,7 @@ const watch = () => {
 
 const gh = () => gulp.src("build/**/*").pipe(ghPages());
 
-const prepare = gulp.series([clean, img])
+const prepare = gulp.series([clean, img, video])
 
 const assets = gulp.series([pug, styles, js])
 

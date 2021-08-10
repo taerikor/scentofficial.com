@@ -4,6 +4,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
         link(rel="stylesheet", href="css/style.css")
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin='true')
@@ -16,5 +17,10 @@ html(lang="en")
         include ../partials/about
         block content
         div.overlay.hidden
+
+    div.video_container
+        video.video(playsinline=' ' autoplay=' ', muted=' ', loop=' ')
+            source(src="/video/1.mp4", type="video/mp4")
+            source(src="/video/2.mp4", type="video/mp4")
 
         script(src="js/main.js") 

@@ -66,7 +66,6 @@ balls.forEach((el, i, ra) => {
     );
 
     el.addEventListener("mouseover",()=>{
-        console.log(el.childNodes[0])
         anim.pause()
         document.querySelector(".overlay").classList.remove("hidden")
         el.childNodes[0].classList.remove("hidden")
