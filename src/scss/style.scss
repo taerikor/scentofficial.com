@@ -12,7 +12,7 @@ body {
   // background-image: url("../img/album_art.jpeg");
   // background-position: center;
   // background-size: contain;
-  height: 110vh;
+  // height: 110vh;
   z-index: 1;
 }
 
@@ -113,8 +113,8 @@ body {
   margin-top: 20px;
 }
 
-.albumBio span {
-  font-size: 3em;
+.albumBio h1 {
+  font-size: 2.5em;
   font-weight: 700;
 }
 
@@ -243,6 +243,28 @@ body {
   }
 
   .profileContent {
-    width: 90%;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .about {
+    justify-content: start;
+    height: 500px;
+  }
+
+  .overlay {
+    height: 100%;
+  }
+
+  .about img {
+    margin-top: 20px;
+  }
+
+  .slider {
+    height: 1020px;
+  }
+
+  .link_list a {
+    font-size: 13px;
   }
 }
