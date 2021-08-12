@@ -11,6 +11,10 @@ export const about = () => {
     const bio = document.querySelector('.profileBio')
     const translate = document.querySelector('.translate')
 
+    const names = document.querySelectorAll('.name')
+
+
+
     const menu = document.querySelector('.slider')
 
     const CN_HIDDEN = 'hidden' 
@@ -22,6 +26,19 @@ export const about = () => {
         if(menu.className === 'slider'){
             menu.classList.add(CN_HIDDEN)
         }
+
+        if(window.innerWidth <= 980){
+            if(container.className === 'about'){
+                names.forEach((name) => {
+                    name.classList.add(CN_HIDDEN)
+                })
+            }else{
+                names.forEach((name) => {
+                    name.classList.remove(CN_HIDDEN)
+                })
+            }
+        }
+
     }
 
     const translateHandler = () => {

@@ -1,13 +1,16 @@
 import { slider } from './slider';
 import { about } from './about';
 
+const CN_HIDDEN = 'hidden' 
+
+
 const colors = ["#d1ce21"];
 const link = [
-"https://youtu.be/SRn9vmSJg6c",
-"https://youtu.be/VdCiydX5aOg",
-"https://youtu.be/iBWt59CKoB4",
-"https://youtu.be/okW4CsUaPK8",
-"https://youtu.be/t5RGd9AEY2U"
+    "https://youtu.be/SRn9vmSJg6c",
+    "https://youtu.be/VdCiydX5aOg",
+    "https://youtu.be/iBWt59CKoB4",
+    "https://youtu.be/okW4CsUaPK8",
+    "https://youtu.be/t5RGd9AEY2U"
 ]
 const text = [
     "ONCE YOU ARE GIVEN CAN NOTHING BE CHANGED",
@@ -74,9 +77,19 @@ balls.forEach((el, i, ra) => {
     el.addEventListener("mouseout",() => {
         anim.play()
         document.querySelector(".overlay").classList.add("hidden")
+        if(window.innerWidth > 980)
         el.childNodes[0].classList.add("hidden")
     })
 });
+
+const names = document.querySelectorAll('.name')
+if(window.innerWidth <= 980){
+    names.forEach((name) => {
+        name.classList.remove(CN_HIDDEN)
+    })
+}
+
+
 
 slider();
 about();
