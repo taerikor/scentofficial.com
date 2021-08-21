@@ -8,6 +8,7 @@ import csso from 'gulp-csso'
 import bro from 'gulp-bro'
 import babelify from 'babelify'
 import ghPages from 'gulp-gh-pages'
+import browserSync from 'browser-sync'
 
 const sass = require('gulp-sass')(require('sass'));
 
@@ -77,6 +78,16 @@ const js = () => {
         )
         .pipe(gulp.dest(routes.js.dest))
 }
+// gulp.task('browser-sync', function() {
+//         browserSync.init({
+//             server: {
+//                 baseDir: "./",
+//                 routes: {
+//                     "/about": "./about.html"
+//                 }
+//             }
+//         });
+//     });
 
 const clean = () => del(["build", ".publish"])
 

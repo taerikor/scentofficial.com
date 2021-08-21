@@ -1,5 +1,5 @@
 import { slider } from './slider';
-import { about } from './about';
+// import { about } from './about';
 
 const CN_HIDDEN = 'hidden' 
 
@@ -91,5 +91,4 @@ if(window.innerWidth <= 980){
 
 
 
-slider();
-about();
+// about();

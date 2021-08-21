@@ -84,7 +84,7 @@ body {
 .slider {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 110vh;
+  height: 1050px;
   width: 100%;
   z-index: 3;
   display: flex;
@@ -92,7 +92,7 @@ body {
 }
 
 .slider .layout {
-  background-color: white;
+  background-color: #f6f9fc;
   width: 410px;
   padding: 30px 30px;
   display: flex;
@@ -146,7 +146,8 @@ body {
 }
 
 .link_container a {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dd571c;
+  color: #dd571c;
 }
 
 .link_container a:hover {
@@ -155,6 +156,7 @@ body {
 }
 
 .about {
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   color: white;
   z-index: 4;
@@ -162,7 +164,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 0 20px;
-  height: 100%;
+  height: 100vh;
 }
 
 .about img {
@@ -181,15 +183,15 @@ body {
   font-size: 4rem;
 }
 
-.profileContent button {
-  border: none;
-  background-color: inherit;
-  color: white;
-  cursor: pointer;
-  font-size: 12px;
-  padding: 0;
-  margin-left: 20px;
-}
+// .profileContent button {
+//   border: none;
+//   background-color: inherit;
+//   color: white;
+//   cursor: pointer;
+//   font-size: 12px;
+//   padding: 0;
+//   margin-left: 20px;
+// }
 
 .profileContent span {
   display: block;
@@ -249,7 +251,8 @@ body {
 
   .about {
     justify-content: start;
-    height: 500px;
+    padding-top: 80px;
+    height: 100vh;
   }
 
   .overlay {

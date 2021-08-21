@@ -13,8 +13,6 @@ html(lang="en")
         title Scent
     body 
         include ../partials/header
-        include ../partials/slider
-        include ../partials/about
         block content
         div.overlay.hidden
 
@@ -22,4 +20,5 @@ html(lang="en")
         video.video(playsinline=' ' autoplay=' ', muted=' ', loop=' ')
             source(src="./video/1.mp4", type="video/mp4")
 
-        script(src="js/main.js") 
+    script(src="js/main.js")
+    script(src="js/about.js") 

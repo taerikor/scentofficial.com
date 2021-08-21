@@ -3,8 +3,6 @@ const EN = `SCENT is a team that creates a variety of music based on Afro, Acid,
 When we listen to music, we sometimes think of the scenery or scent of the moments that we heard the music before.
 The name SCENT presents the musical goal of leaving their scent to their listeners.`
 
-
-export const about = () => {
     const btn = document.querySelector('.fa-user')
     const container = document.querySelector('.about')
     const overlay = document.querySelector('.overlay')
@@ -13,7 +11,7 @@ export const about = () => {
 
     const names = document.querySelectorAll('.name')
 
-
+    console.log(translate)
 
     const menu = document.querySelector('.slider')
 
@@ -53,4 +51,3 @@ export const about = () => {
 
     btn.addEventListener('click', buttonHandler)
     translate.addEventListener('click', translateHandler)
-}
