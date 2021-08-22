@@ -8,7 +8,7 @@ import csso from 'gulp-csso'
 import bro from 'gulp-bro'
 import babelify from 'babelify'
 import ghPages from 'gulp-gh-pages'
-import browserSync from 'browser-sync'
+// import browserSync from 'browser-sync'
 
 const sass = require('gulp-sass')(require('sass'));
 
